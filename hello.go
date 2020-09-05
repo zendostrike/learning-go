@@ -2,8 +2,12 @@ package main
 
 import (
 	"fmt"
+
+	"example.com/user/hello/morestrings"
+	"github.com/google/go-cmp/cmp"
 )
 
 func main() {
-	fmt.Println("Hello cat!")
+	fmt.Println(morestrings.ReverseRunes("Hello cat!"))
+	fmt.Println(cmp.Diff("Hello World", "Hello Go"))
 }
